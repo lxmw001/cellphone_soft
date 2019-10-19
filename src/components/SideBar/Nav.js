@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { Link, withRouter } from 'react-router-dom';
 import { Collapse } from 'react-bootstrap';
-
+import { Link, withRouter } from 'react-router-dom';
 
 class Nav extends Component {
 
@@ -91,24 +90,6 @@ class Nav extends Component {
                 </li>
                 <li className={this.isPathActive('/tables/fixed-data-table') ? 'active' : null}>
                   <Link to="/tables/react-bootstrap-table">React Bootstrap Table</Link>
-                </li>
-              </ul>
-            </div>
-          </Collapse>
-        </li>
-        <li className={this.isPathActive('/maps') || this.state.mapMenuOpen ? 'active' : null}>
-          <a onClick={() => this.setState({ mapMenuOpen: !this.state.mapMenuOpen })} data-toggle="collapse">
-            <i className="pe-7s-map-marker"></i>
-            <p>Map <b className="caret"></b></p>
-          </a>
-          <Collapse in={this.state.mapMenuOpen}>
-            <div>
-              <ul className="nav">
-                <li className={this.isPathActive('/maps/google-map') ? 'active' : null}>
-                  <Link to="/maps/google-map">Google Map</Link>
-                </li>
-                <li className={this.isPathActive('/maps/vector-map') ? 'active' : null}>
-                  <Link to="/maps/vector-map">Vector Map</Link>
                 </li>
               </ul>
             </div>

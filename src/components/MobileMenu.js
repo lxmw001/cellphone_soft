@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { Link, withRouter } from 'react-router-dom';
+
 import backgroundImage from '../assets/images/sidebar-5.jpg';
 
 const MobileMenu = ({
@@ -48,12 +49,6 @@ const MobileMenu = ({
           <Link to="/icons">
             <i className="pe-7s-science"></i>
             <p>Icons</p>
-          </Link>
-        </li>
-        <li className={location.pathname === '/map' ? 'active' : null}>
-          <Link to="/map">
-            <i className="pe-7s-map-marker"></i>
-            <p>Maps</p>
           </Link>
         </li>
         <li className={location.pathname === '/notifications' ? 'active' : null}>

@@ -1,26 +1,25 @@
-import React from 'react';
-import { Route, Router } from 'react-router-dom';
-import { connect } from 'react-redux';
 import cx from 'classnames';
-import { setMobileNavVisibility } from '../../reducers/Layout';
+import React from 'react';
+import { connect } from 'react-redux';
+import { Route, Router } from 'react-router-dom';
 import { withRouter } from 'react-router-dom';
 
-import Header from './Header';
-import Footer from './Footer';
+import MobileMenu from '../../components/MobileMenu';
 import SideBar from '../../components/SideBar';
 import ThemeOptions from '../../components/ThemeOptions';
-import MobileMenu from '../../components/MobileMenu';
+import { setMobileNavVisibility } from '../../reducers/Layout';
+import Calendar from '../Calendar';
+import Charts from '../Charts';
+import Components from '../Components';
 /**
  * Pages
  */
 import Dashboard from '../Dashboard';
-import Components from '../Components';
-import UserProfile from '../UserProfile';
-import MapsPage from '../MapsPage';
 import Forms from '../Forms';
-import Charts from '../Charts';
-import Calendar from '../Calendar';
 import Tables from '../Tables';
+import UserProfile from '../UserProfile';
+import Footer from './Footer';
+import Header from './Header';
 
 const Main = ({
   mobileNavVisibility,
@@ -47,7 +46,6 @@ const Main = ({
           <Route path="/profile" component={UserProfile} />
           <Route path="/forms" component={Forms} />
           <Route path="/tables" component={Tables} />
-          <Route path="/maps" component={MapsPage} />
           <Route path="/charts" component={Charts} />
           <Route path="/calendar" component={Calendar} />
           <Footer />

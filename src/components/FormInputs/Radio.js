@@ -13,8 +13,6 @@ class Radio extends Component {
     let {
       input,
       label,
-      type,
-      meta: { touched, error, warning },
       disabled
     } = this.props;
     return (
@@ -23,8 +21,8 @@ class Radio extends Component {
         disabled: disabled
       })}>
         <span className="icons">
-          <img className="first-icon" src={uncheckImage} width={17} />
-          <img className="second-icon" src={checkImage} width={17} />
+          <img className="first-icon" src={uncheckImage} width={17} alt="" />
+          <img className="second-icon" src={checkImage} width={17} alt="" />
         </span>
         <input {...input} type="radio" data-toggle="radio" disabled={disabled} />
         {label}

@@ -1,3 +1,4 @@
+/* eslint-disable default-case */
 const SET_MOBILE_NAV_VISIBILITY = 'LAYOUT/SET_MOBILE_NAV_VISIBILITY';
 
 export const setMobileNavVisibility = (visibility) => ({

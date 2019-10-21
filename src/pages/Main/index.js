@@ -1,9 +1,7 @@
 import cx from 'classnames';
 import React from 'react';
 import { connect } from 'react-redux';
-import { Route } from 'react-router-dom';
-import { withRouter } from 'react-router-dom';
-
+import { Route, withRouter } from 'react-router-dom';
 // import MobileMenu from '../../components/MobileMenu';
 import SideBar from '../../components/SideBar';
 // import ThemeOptions from '../../components/ThemeOptions';
@@ -17,7 +15,6 @@ import Clients from '../Clients';
  * Pages
  */
 import Dashboard from '../Dashboard';
-import Forms from '../Forms';
 // import Tables from '../Tables';
 // import UserProfile from '../UserProfile';
 import Footer from './Footer';

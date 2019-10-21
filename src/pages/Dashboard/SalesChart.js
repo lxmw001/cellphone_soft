@@ -12,7 +12,6 @@ let dataSales = {
 };
 
 let optionsSales = {
-  lineSmooth: true,
   low: 0,
   high: 800,
   showArea: true,

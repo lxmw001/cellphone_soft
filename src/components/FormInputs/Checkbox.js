@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import cx from 'classnames';
 import uncheckImage from 'assets/images/checkbox-1.svg';
 import checkImage from 'assets/images/checkbox-2.svg';
+import cx from 'classnames';
+import React, { Component } from 'react';
 
 class Checkbox extends Component {
 
@@ -9,8 +9,6 @@ class Checkbox extends Component {
     let {
       input,
       label,
-      type,
-      meta: { touched, error, warning },
       disabled
     } = this.props;
 
@@ -20,8 +18,8 @@ class Checkbox extends Component {
         disabled: disabled
       })}>
         <span className="icons">
-          <img className="first-icon" src={uncheckImage} width={17} />
-          <img className="second-icon" src={checkImage} width={17} />
+          <img className="first-icon" src={uncheckImage} width={17} alt="" />
+          <img className="second-icon" src={checkImage} width={17} alt="" />
         </span>
         <input {...input} type="checkbox" data-toggle="checkbox" disabled={disabled} />
         {label}

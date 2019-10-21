@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { Collapse } from 'react-bootstrap';
-import UserInfo from './UserInfo';
+import { withRouter } from 'react-router-dom';
 import Nav from './Nav';
-import backgroundImage from 'assets/images/sidebar-5.jpg';
+import UserInfo from './UserInfo';
 
 class SideBar extends Component {
 
@@ -12,7 +10,6 @@ class SideBar extends Component {
 
   render() {
     let {
-      location,
       backgroundColor,
       enableBackgroundImage,
       backgroundImage

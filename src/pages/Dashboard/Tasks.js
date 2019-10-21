@@ -71,8 +71,8 @@ class Tasks extends Component {
                 })}
                 >
                   <span className="icons">
-                    <img className="first-icon" src={uncheckImage} width={17} />
-                    <img className="second-icon" src={checkImage} width={17} />
+                    <img className="first-icon" src={uncheckImage} width={17} alt="" />
+                    <img className="second-icon" src={checkImage} width={17} alt="" />
                   </span>
                   <input type="checkbox" data-toggle="checkbox" checked={todo.completed} onChange={() => this.toggleComplete(todo.id)} />
                 </label>

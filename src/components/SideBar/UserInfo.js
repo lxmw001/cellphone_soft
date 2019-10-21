@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/href-no-hash */
 import React, { Component } from 'react';
 import { Collapse } from 'react-bootstrap';
 import { connect } from 'react-redux';

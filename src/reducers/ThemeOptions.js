@@ -1,3 +1,4 @@
+/* eslint-disable default-case */
 import defaultBackground from '../assets/images/sidebar-1.jpg';
 export const SET_ENABLE_BACKGROUND_IMAGE = 'THEME_OPTIONS/SET_ENABLE_BACKGROUND_IMAGE';
 export const SET_BACKGROUND_COLOR = 'THEME_OPTIONS/SET_BACKGROUND_COLOR';

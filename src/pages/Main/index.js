@@ -1,23 +1,25 @@
 import cx from 'classnames';
 import React from 'react';
 import { connect } from 'react-redux';
-import { Route, Router } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import { withRouter } from 'react-router-dom';
 
-import MobileMenu from '../../components/MobileMenu';
+// import MobileMenu from '../../components/MobileMenu';
 import SideBar from '../../components/SideBar';
-import ThemeOptions from '../../components/ThemeOptions';
+// import ThemeOptions from '../../components/ThemeOptions';
 import { setMobileNavVisibility } from '../../reducers/Layout';
-import Calendar from '../Calendar';
-import Charts from '../Charts';
-import Components from '../Components';
+import Clients from '../Clients';
+// import EditClient from '../Clients/edit';
+// import Calendar from '../Calendar';
+// import Charts from '../Charts';
+// import Components from '../Components';
 /**
  * Pages
  */
 import Dashboard from '../Dashboard';
 import Forms from '../Forms';
-import Tables from '../Tables';
-import UserProfile from '../UserProfile';
+// import Tables from '../Tables';
+// import UserProfile from '../UserProfile';
 import Footer from './Footer';
 import Header from './Header';
 
@@ -42,12 +44,14 @@ const Main = ({
         <div className="main-panel">
           <Header />
           <Route exact path="/" component={Dashboard} />
-          <Route path="/components" component={Components} />
-          <Route path="/profile" component={UserProfile} />
-          <Route path="/forms" component={Forms} />
-          <Route path="/tables" component={Tables} />
+          <Route path="/clients" component={Clients} />
+          {/* <Route path="/clients/edit" component={EditClient} /> */}
+          {/* <Route path="/components" component={Components} />
+          <Route path="/profile" component={UserProfile} />*/}
+          {/* <Route path="/forms" component={Forms} /> */}
+          {/* <Route path="/tables" component={Tables} />
           <Route path="/charts" component={Charts} />
-          <Route path="/calendar" component={Calendar} />
+          <Route path="/calendar" component={Calendar} />  */}
           <Footer />
         </div>
       </div>

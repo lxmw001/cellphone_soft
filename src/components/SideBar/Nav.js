@@ -16,16 +16,33 @@ class Nav extends Component {
             <p>Dashboard</p>
           </Link>
         </li>
-        <li className={this.isPathActive('/components') || this.state.componentMenuOpen ? 'active' : null}>
-          <a onClick={() => this.setState({ componentMenuOpen: !this.state.componentMenuOpen })}
-            data-toggle="collapse">
-            <i className="pe-7s-plugin"></i>
-            <p>
-              Components
-            <b className="caret"></b>
-            </p>
+          <li className={this.isPathActive('/clients') || this.state.clientsMenuOpen ? 'active' : null}>
+          <a onClick={() => this.setState({ clientsMenuOpen: !this.state.clientsMenuOpen })} data-toggle="collapse">
+            <i className="pe-7s-note2"></i>
+            <p>Clientes <b className="caret"></b></p>
           </a>
-          <Collapse in={this.state.componentMenuOpen}>
+          <Collapse in={this.state.clientsMenuOpen}>
+            <div>
+              <ul className="nav">
+                <li className={this.isPathActive('/clients/list') ? 'active' : null}>
+                  <Link to="/clients/list">Lista</Link>
+                </li>
+                <li className={this.isPathActive('/clients/edit') ? 'active' : null}>
+                  <Link to="/clients/edit">Nuevo</Link>
+                </li>
+              </ul>
+            </div>
+          </Collapse>
+        </li>
+        {/* <li className={this.isPathActive('/clients') || this.state.clientsMenuOpen ? 'active' : null}> */}
+          {/* <a onClick={() => this.setState({ clientsMenuOpen: !this.state.clientsMenuOpen })}> */}
+            {/* <i className="pe-7s-plugin"></i> */}
+            {/* <p> */}
+              {/* Clientes */}
+            {/* <b className="caret"></b> */}
+            {/* </p> */}
+          {/* </a> */}
+          {/* <Collapse in={this.state.clientsMenuOpen}>
             <div>
               <ul className="nav">
                 <li className={this.isPathActive('/components/buttons') ? 'active' : null}>
@@ -51,30 +68,9 @@ class Nav extends Component {
                 </li>
               </ul>
             </div>
-          </Collapse>
-        </li>
-        <li className={this.isPathActive('/forms') || this.state.formMenuOpen ? 'active' : null}>
-          <a onClick={() => this.setState({ formMenuOpen: !this.state.formMenuOpen })} data-toggle="collapse">
-            <i className="pe-7s-note2"></i>
-            <p>Forms <b className="caret"></b></p>
-          </a>
-          <Collapse in={this.state.formMenuOpen}>
-            <div>
-              <ul className="nav">
-                <li className={this.isPathActive('/forms/regular-forms') ? 'active' : null}>
-                  <Link to="/forms/regular-forms">Regular Forms</Link>
-                </li>
-                <li className={this.isPathActive('/forms/extended-forms') ? 'active' : null}>
-                  <Link to="/forms/extended-forms">Extended Forms</Link>
-                </li>
-                <li className={this.isPathActive('/forms/validation-forms') ? 'active' : null}>
-                  <Link to="/forms/validation-forms">Validation Forms</Link>
-                </li>
-              </ul>
-            </div>
-          </Collapse>
-        </li>
-        <li className={this.isPathActive('/tables') || this.state.tableMenuOpen ? 'active' : null}>
+          </Collapse> */}
+        {/* </li> */}
+        {/* <li className={this.isPathActive('/tables') || this.state.tableMenuOpen ? 'active' : null}>
           <a onClick={() => this.setState({ tableMenuOpen: !this.state.tableMenuOpen })} data-toggle="collapse">
             <i className="pe-7s-news-paper"></i>
             <p>Tables <b className="caret"></b></p>
@@ -106,7 +102,7 @@ class Nav extends Component {
             <i className="pe-7s-date"></i>
             <p>Calendar</p>
           </Link>
-        </li>
+        </li> */}
       </ul>
     );
   }

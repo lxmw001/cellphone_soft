@@ -18,7 +18,7 @@ class Nav extends Component {
           </Link>
         </li>
           <li className={this.isPathActive('/clients') || this.state.clientsMenuOpen ? 'active' : null}>
-          <a onClick={() => this.setState({ clientsMenuOpen: !this.state.clientsMenuOpen })} data-toggle="collapse" href="#">
+          <a onClick={() => this.setState({ clientsMenuOpen: !this.state.clientsMenuOpen })} data-toggle="collapse">
             <i className="pe-7s-note2"></i>
             <p>Clientes <b className="caret"></b></p>
           </a>
@@ -30,6 +30,25 @@ class Nav extends Component {
                 </li>
                 <li className={this.isPathActive('/clients/edit') ? 'active' : null}>
                   <Link to="/clients/edit">Nuevo</Link>
+                </li>
+              </ul>
+            </div>
+          </Collapse>
+        </li>
+
+        <li className={this.isPathActive('/reciepts') || this.state.receiptsMenuOpen ? 'active' : null}>
+          <a onClick={() => this.setState({ receiptsMenuOpen: !this.state.receiptsMenuOpen })} data-toggle="collapse">
+            <i className="pe-7s-note2"></i>
+            <p>Recibos <b className="caret"></b></p>
+          </a>
+          <Collapse in={this.state.receiptsMenuOpen}>
+            <div>
+              <ul className="nav">
+                <li className={this.isPathActive('/receipts/list') ? 'active' : null}>
+                  <Link to="/receipts/list">Lista</Link>
+                </li>
+                <li className={this.isPathActive('/receipts/new') ? 'active' : null}>
+                  <Link to="/receipts/new">Nuevo</Link>
                 </li>
               </ul>
             </div>

@@ -7,6 +7,7 @@ import SideBar from '../../components/SideBar';
 // import ThemeOptions from '../../components/ThemeOptions';
 import { setMobileNavVisibility } from '../../reducers/Layout';
 import Clients from '../Clients';
+import Receipts from '../Receipts';
 // import EditClient from '../Clients/edit';
 // import Calendar from '../Calendar';
 // import Charts from '../Charts';
@@ -42,6 +43,7 @@ const Main = ({
           <Header />
           <Route exact path="/" component={Dashboard} />
           <Route path="/clients" component={Clients} />
+          <Route path="/receipts" component={Receipts} />
           {/* <Route path="/clients/edit" component={EditClient} /> */}
           {/* <Route path="/components" component={Components} />
           <Route path="/profile" component={UserProfile} />*/}

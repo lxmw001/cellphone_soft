@@ -1,4 +1,4 @@
-/* eslint-disable jsx-a11y/href-no-hash */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
 import { Collapse } from 'react-bootstrap';
 import { connect } from 'react-redux';

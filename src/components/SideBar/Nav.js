@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
 import { Collapse } from 'react-bootstrap';
 import { Link, withRouter } from 'react-router-dom';
@@ -17,7 +18,7 @@ class Nav extends Component {
           </Link>
         </li>
           <li className={this.isPathActive('/clients') || this.state.clientsMenuOpen ? 'active' : null}>
-          <a onClick={() => this.setState({ clientsMenuOpen: !this.state.clientsMenuOpen })} data-toggle="collapse">
+          <a onClick={() => this.setState({ clientsMenuOpen: !this.state.clientsMenuOpen })} data-toggle="collapse" href="#">
             <i className="pe-7s-note2"></i>
             <p>Clientes <b className="caret"></b></p>
           </a>

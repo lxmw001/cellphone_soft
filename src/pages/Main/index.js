@@ -2,22 +2,14 @@ import cx from 'classnames';
 import React from 'react';
 import { connect } from 'react-redux';
 import { Route, withRouter } from 'react-router-dom';
-// import MobileMenu from '../../components/MobileMenu';
 import SideBar from '../../components/SideBar';
-// import ThemeOptions from '../../components/ThemeOptions';
 import { setMobileNavVisibility } from '../../reducers/Layout';
-import Clients from '../Clients';
-import Receipts from '../Receipts';
-// import EditClient from '../Clients/edit';
-// import Calendar from '../Calendar';
-// import Charts from '../Charts';
-// import Components from '../Components';
 /**
  * Pages
  */
+import Clients from '../Clients';
 import Dashboard from '../Dashboard';
-// import Tables from '../Tables';
-// import UserProfile from '../UserProfile';
+import Receipts from '../Receipts';
 import Footer from './Footer';
 import Header from './Header';
 
@@ -44,13 +36,6 @@ const Main = ({
           <Route exact path="/" component={Dashboard} />
           <Route path="/clients" component={Clients} />
           <Route path="/receipts" component={Receipts} />
-          {/* <Route path="/clients/edit" component={EditClient} /> */}
-          {/* <Route path="/components" component={Components} />
-          <Route path="/profile" component={UserProfile} />*/}
-          {/* <Route path="/forms" component={Forms} /> */}
-          {/* <Route path="/tables" component={Tables} />
-          <Route path="/charts" component={Charts} />
-          <Route path="/calendar" component={Calendar} />  */}
           <Footer />
         </div>
       </div>

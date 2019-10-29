@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import registerServiceWorker from './registerServiceWorker';
 import { HashRouter } from 'react-router-dom';
 import './assets/styles/base.scss';
 // import 'sweetalert/dist/sweetalert.css';
@@ -30,6 +29,3 @@ if (module.hot) {
     renderApp(NextApp);
   });
 }
-
-registerServiceWorker();
-
